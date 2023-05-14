@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>CURD Operation</title>
+</head>
+<body style="color: beige; background-color: black;">
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="display-5 mb-5"><strong>CURD Operation</strong></h1>
+        </div>
+
+        <div class="main row justify-content-center">
+            <form action="" id="info-form" class="row justify-content-center mb-4">
+                <div class="col-8 mb-3">
+                    <label for="name">name</label>
+                    <input class="form-control" id="name" type="text" placeholder="Enter Your Name">
+                </div>
+                <div class="col-8 mb-3">
+                    <label for="email">email</label>
+                    <input class="form-control" id="email" type="text" placeholder="Enter Your Email">
+                </div>
+                <div class="col-8 mb-3">
+                    <label for="age">age</label>
+                    <input class="form-control" id="age" type="text" placeholder="Enter Your Age">
+                </div>
+                <div class="col-8 mb-3">
+                    <label for="gender">gender</label>
+                    <input class="form-control" id="gender" type="text" placeholder="Enter Your Gender">
+                </div>
+                <div class="col-8 ">
+                    <input class="btn btn-success add-btn" type="submit" value="Add" style="color: aliceblue;" >
+                </div>
+            </form>
+            <div class="col-10 mt-5">
+                <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th>name</th>
+                            <th>email</th>
+                            <th>age</th>
+                            <th>gender</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="info-list">
+                        <tr>
+                            <td>Meram</td>
+                            <td>meram@gmail.com</td>
+                            <td>20</td>
+                            <td>female</td>
+                            <td>
+                                <a href="#" class="btn btn-warning btn-sm update">Update</a>
+                                <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <script src="operation.js"></script>
+</body>
+</html>
